@@ -1,0 +1,29 @@
+.home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.home>h1 {
+  font-size: 3.052rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.home .orange-gradient {
+  background-image: linear-gradient(to right, rgb(234 88 12), rgb(234 179 8));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.home>p {
+  color: rgb(75 85 99);
+  font-size: 1.5rem;
+  margin-top: 2rem ;
+  line-height: 2.2rem;
+}

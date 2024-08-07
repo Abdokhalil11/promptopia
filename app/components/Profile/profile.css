@@ -1,0 +1,21 @@
+.profile-page {
+  padding: 0 1.5rem;
+}
+
+.profile-page .profile-title {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: left;
+}
+
+.profile-page .profile-description {
+  text-transform: capitalize;
+  text-align: left;
+  color: rgb(107 114 128);
+  font-size: 17px;
+}
+
+.profile-page .profile-posts {
+  columns: 3 330px;
+  gap: 15px;
+}

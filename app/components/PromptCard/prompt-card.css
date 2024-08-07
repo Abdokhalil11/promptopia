@@ -1,0 +1,72 @@
+.prompt-card {
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  break-inside: avoid;
+
+}
+
+.prompt-card:last-child {
+  margin-bottom: 0;
+
+}
+
+.prompt-card .prompt-header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+
+.prompt-card .prompt-header image {
+  object-fit: contain;
+}
+
+.prompt-card .prompt-header .prompt-user {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.prompt-card .prompt-header .prompt-user h3 {
+  margin: 0;
+}
+
+.prompt-card .prompt-header .prompt-user p {
+  margin: 0;
+  font-size: 15px;
+  color: rgb(107 114 128);
+}
+
+.prompt-card .prompt-header .copy-btn {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.prompt-card .prompt-body p:nth-child(1) {
+  color: rgb(55 65 81);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.prompt-card .prompt-body p:nth-child(2) {
+  text-align: left;
+  font-size: 13px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.prompt-card .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.prompt-card .buttons p {
+  margin: 0;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 700;
+}

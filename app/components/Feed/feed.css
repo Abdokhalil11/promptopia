@@ -1,0 +1,52 @@
+.feed{
+  padding: 0 1.5rem;
+}
+.feed .feed-search {
+  width: 500px;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: white;
+  color: #0d0c22;
+  transition: .3s ease;
+}
+
+@media (max-width:768px) {
+  .feed .feed-search {
+    width: 250px;
+    font-size: 12px;
+  }
+}
+
+.feed .feed-search::placeholder {
+  color: #9e9ea7;
+}
+
+.feed .feed-search:focus,
+.feed .feed-search :hover {
+  outline: none;
+  border-color: #ff5722;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(255 87 34 / 10%);
+}
+
+.promptCardList {
+  margin-top: 20px;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 15px; */
+  /* display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 15px; */
+  columns: 3 330px;
+  gap: 15px;
+}
+
+/* .promptCardList > div{
+  flex-basis: calc(100% / 3);
+} */

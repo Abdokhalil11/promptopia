@@ -1,0 +1,104 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.5rem;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  text-decoration: none;
+}
+
+nav a image {
+  object-fit: contain;
+}
+
+nav a p {
+  font-size: 1.6rem;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (max-width:768px) {
+  nav a p {
+    display: none;
+  }
+}
+
+nav .actions {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  position: relative;
+}
+
+nav .actions.mobile {
+  display: none;
+
+}
+
+@media (max-width:768px) {
+  nav .actions.desktop {
+    display: none;
+  }
+
+  nav .actions.mobile {
+    display: flex;
+  }
+}
+
+nav .actions a.create-post,
+nav .actions button.sign-out,
+nav .actions a.sign {
+  background: black;
+  padding: .8rem 1.3rem;
+  border-radius: 2rem;
+  color: white;
+  transition: .3 ease;
+  border: 1px solid;
+  font-size: .9rem;
+}
+
+nav .actions button.sign-out,
+nav .actions a.create-post:hover {
+  background-color: white;
+  color: black;
+}
+
+nav .actions.mobile .drop-down[show="false"] {
+  display: none;
+}
+
+nav .actions.mobile .drop-down {
+  position: absolute;
+  right: 20px;
+  top: calc(100% + 10px);
+  background-color: white;
+  padding: 10px 20px;
+}
+
+nav .actions.mobile .drop-down>* {
+  margin-left: auto;
+  justify-content: end;
+  color: black;
+  margin-bottom: 10px;
+  font-size: 17px;
+
+}
+
+nav .actions.mobile .drop-down button {
+  background-color: black;
+  color: white;
+  width: 200px;
+  height: 45px;
+  border-radius: 45px;
+  margin-top: 15px;
+  appearance: none;
+  border: 1px solid;
+  outline: none;
+}
